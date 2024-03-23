@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+    padding: 0 30px;
+    font-size: 2.15vw;
+    font-weight: 500;
+}
+
+nav i{
+    background-color: black;
+    color: white;
+    font-size: 2.15vw;
+    padding: 15px;
+    border-radius: 50%;
+    font-weight: 500;
+}
+
+#center {
+    width: 100%;
+    padding: 0 80px;
+}
+
+#center h1 {
+    font-size: 4.5vw;
+    line-height: 4vw;
+    font-weight: 500;
+}
+
+#center-in {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#center-in p {
+    font-size: 1.2vw;
+    line-height: 1.5vw;
+    font-weight: 500;
+}
+
+#right {
+    padding: 10px 10px;
+    width: 20%;
+}
+
+#right .elem {
+    border-top: 1px solid black;
+    padding: 15px 0px;
+    font-size: larger;
+    font-weight: 600;
+    font-family: system-ui;
+    display: flex;
+    display: flex;
+    justify-content: space-between;
+}
+
+#right .elem i {
+    font-size: 1.2vw;
+    font-weight: 500;
+    opacity: 0;
+}   
+
+#right .elem:hover i{
+    opacity: 1;
+}   
+
+#right .elem:hover a{
+    text-decoration: underline;
+}   
+
+#bottom {
+    height: 40%;
+    width: 100%;
+    background-image: url(https://images.unsplash.com/photo-1571442463800-1337d7af9d2f?q=80&w=3546&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    /* background-position: 0 25%;
+    margin: 0 30% 0 30%; */
+}
+
+
+@media (max-width: 600px) {
+    nav {
+        font-size: 4.15vw;
+    }
+
+    nav h4 {
+        display: none;
+    }
+
+    nav i{
+        background-color: black;
+        color: white;
+        font-size: 4.15vw;
+        padding: 10px;
+        border-radius: 50%;
+        font-weight: 500;
+    }
+
+
+    #center {
+        padding: 0 30px;
+    }
+    
+    #center h1 {
+        font-size: 9.5vw;
+        line-height: 11vw;
+    }
+    
+    #center-in {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #center-in p {
+        font-size: 3.5vw;
+        line-height: 4.5vw;    
+    }
+    
+    #right {
+        width: 100%;
+        padding: 30px 0;
+    }
+    
+    #right .elem {
+        border-top: 1px solid black;
+        padding: 14px 7px;
+        display: flex;
+        gap: 10px;
+    }
+
+    #right .elem a{
+        font-size: 3.5vw;
+    }
+    
+    #right .elem i {
+        font-size: 3.5vw;
+        font-weight: 500;
+        opacity: 1;
+    }   
+    
+    #right .elem:hover i{
+        opacity: 1;
+    }   
+    
+    #right .elem:hover a{
+        text-decoration: underline;
+    }   
+}
