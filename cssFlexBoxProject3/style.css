@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+}
+
+#nav1 {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav1 #nav1-left {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+}
+
+#nav1 #nav1-left .circle {
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+#nav1 #nav1-right {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    gap: 50px;
+}
+
+#nav1-right h4{
+    font-size: .9vw;
+    font-weight: 500;
+}
+
+#nav1-right h4 span {
+    padding-left: 10px;
+    color: rgb(186, 183, 183);
+}
+
+#nav2 {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+    gap: 80px;
+}
+
+#nav2 h3{
+    text-transform: uppercase;
+    font-size: 1vw;
+    font-weight: 600;
+}
+
+#content {
+    height: calc(100% - 150px);
+    width: 100%;
+}   
+
+#text-content {
+    height: 40%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+}
+
+#text-content::-webkit-scrollbar {
+    background-color: transparent;
+    height: 5px;
+}
+
+#text-content::-webkit-scrollbar-thumb {
+    background-color: orangered;
+}
+
+#text-content .elem {
+    flex-shrink: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 6vw;
+    font-weight: 200;
+}
+
+#image-content {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    overflow-x: auto;
+}
+
+#image-content img {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#image-content img.img1  {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0px -100px;
+}
+
+#image-content::-webkit-scrollbar {
+    display: none;
+}
+
