@@ -47,6 +47,12 @@ html, body {
     font-weight: 500;
 }
 
+#nav1-right i{
+    font-size: .9vw;
+    font-weight: 500;
+    display: none;
+}
+
 #nav1-right h4 span {
     padding-left: 10px;
     color: rgb(186, 183, 183);
@@ -125,3 +131,65 @@ html, body {
     display: none;
 }
 
+
+@media (max-width: 600px) {    
+    #nav1 #nav1-right {
+        padding: 0 10px;
+    }
+    
+    #nav1-right h4{
+        display: none;
+    }
+
+    #nav1-right h4.language{
+        display: initial;
+        font-size: 4vw;
+        font-weight: 500;
+    }
+
+    #nav1-right i{
+        display: initial;
+        font-size: 4vw;
+    }
+    
+    #nav1-right h4 span {
+        color: rgb(186, 183, 183);
+    }
+    
+
+    #nav2 {
+        padding: 0 10px;
+        gap: 15px;
+    }
+    
+    #nav2 h3{
+        text-transform: uppercase;
+        font-size: 2.5vw;
+        font-weight: 600;
+    }
+
+
+    #content {
+        height: calc(100% - 150px);
+        width: 100%;
+    }   
+    
+    #text-content {
+        height: 30%;
+    }
+
+    #text-content .elem {
+
+        font-size: 10vw;
+        font-weight: 200;
+    }
+
+    #image-content {
+        height: 70%;
+    }
+    
+    #image-content img.img1  {
+        object-position: 0 25%;
+    }
+
+}
