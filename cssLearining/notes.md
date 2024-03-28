@@ -64,6 +64,24 @@ These properties are fundamental for controlling the dimensions and appearance o
    - **Definition:** Similar to rem, but em is based on the font-size of the parent element. If no parent font size is specified, it defaults to the browser's default font size.
    - **Example:** If a parent element has a font size of 20px and you set a child element's font size to 1.5em, the child element's font size will be 30px (1.5 times the parent font size).
 
+7. **Viewport Height Max (vhmax):**
+   - **Definition:** Viewport height max (vhmax) is a CSS unit of measurement that represents the maximum percentage of the viewport's height. It ensures that an element's height does not exceed a certain percentage of the viewport's height.
+   - **Example:** If you set an element's height to 80vhmax, it means the element's height will be 80% of the viewport's height, but it won't exceed this value even if the content inside it exceeds the calculated height.
+
+8. **Viewport Width Max (vwmax):**
+   - **Definition:** Viewport width max (vwmax) is similar to `vhmax`, but it represents the maximum percentage of the viewport's width instead of height.
+   - **Example:** Setting an element's width to 70vwmax means the element's width will be 70% of the viewport's width, but it won't exceed this value even if the content inside it exceeds the calculated width.
+
+9. **Viewport Height Min (vhmin):**
+   - **Definition:** Viewport height min (vhmin) is a CSS unit of measurement that represents the minimum percentage of the viewport's height. It ensures that an element's height does not fall below a certain percentage of the viewport's height.
+   - **Example:** If you set an element's height to 20vhmin, it means the element's height will be at least 20% of the viewport's height, but it can be larger if the content inside it requires more space.
+
+10. **Viewport Width Min (vwmin):**
+   - **Definition:** Viewport width min (vwmin) is similar to `vhmin`, but it represents the minimum percentage of the viewport's width instead of height.
+   - **Example:** Setting an element's width to 40vwmin means the element's width will be at least 40% of the viewport's width, but it can be larger if the content inside it requires more space.
+
+These units provide additional flexibility and control over responsive design elements by allowing developers to specify minimum and maximum dimensions relative to the viewport size.
+
 In summary, each unit of measurement serves a different purpose and is used in different contexts. Pixels are absolute, percentages are relative to the parent element, vh and vw are relative to the viewport, rem is relative to the root font size, and em is relative to the parent element's font size.
 
 
