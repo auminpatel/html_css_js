@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    transition: 0.3s;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+nav {
+    width: 100%;
+    height: 15vh;
+    background-color: rgba(255, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    color: white;
+    border-bottom: 2px solid white;
+    z-index: 3;
+}
+
+nav.scroll {
+    color: white;
+    background-color: black;
+    height: 10vh;
+}
+
+nav h1 {
+    font-size: 4vw;
+    align-self: center;
+    padding: 30px 50px;
+}
+
+nav .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 25%;
+    padding-right: 30px 50px;
+}
+
+nav .menu .item {
+    font-size: 1.2vw;
+}
+
+.section1 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+.section1 .slide{
+    height: 100vh;
+    width: 600%;
+    display: flex;
+    align-items: center;
+}
+
+.section1 .images{
+    height: 100%;
+    width: 300%;
+    display: flex;
+    align-items: center;
+    animation: slideImages;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; 
+    animation-direction: normal;
+}
+
+.section1 .images img{
+    width: 33.33%;
+    object-fit: cover;
+}
+
+@keyframes slideImages {
+    0% {
+        transform: translateX(0);
+    }
+    33.33% {
+        transform: translateX(-33.33%);
+    }
+    66.66% {
+        transform: translateX(-66.66%);
+    }
+    100% {
+        transform: translateX(-100%)
+    }
+}
+
+
+.section1 .content {
+    font-size: 2.5vw;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    width: 55vw;
+    color: white;
+    z-index: 1;
+    text-align: center;
+    font-weight: 300;
+}
+
+.section2 {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh 20vw 10vh 20vw;
+}
+
+.section2 .content{
+    height: 100%;
+    width: 30vw;
+}
+
+.section2 .content h2{
+    font-size: 2.2vw;
+    color: red;
+}
+
+.section2 .content h4{
+    font-size: 3vw;
+    color: black;
+}
+
+.section2 .content p{
+    font-size: 1vw;
+    color: black;
+}
+
+.section2 .content button{
+    margin: 20px 0;
+    font-size: .8vw;
+    background-color: red;
+    width: 70%;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 15px;
+}
+
+.section2 .image img {
+    height: 100%;
+}
+
+.section2 .image img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.section3 {
+    background-color: black;
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+}
+
+.section3 span{
+    color: red;
+}
+
+.section4 {
+    margin: 10vh 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.section4 .container {
+    margin: 15px;
+    overflow: hidden;
+    height: auto;
+}
+
+.section4 .container img {
+    object-fit: contain;
+    max-width: 100% !important;
+   
+}
+
+.section4 .container img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.section4 .container h2 {
+    font-size: 2.5vw;
+    padding-bottom: 15px;
+}
+
+.section4 .container p {
+    font-size: 1vw;
+    padding-bottom: 10px;
+}
+
+.section5 {
+    background-color: black;
+    color: white;
+    font-size: 2.5vw;
+    text-align: center;
+    padding: 20px;
+    letter-spacing: 1.2px;
+}
+
+.section5 span{
+    color: red;
+}
+
+.section5 p{
+    font-size: 1.2vw;
+    letter-spacing: 0;
+}
+
+
+.section6 {
+    width: 100%;
+    position: relative;
+    margin: 30vh 0;
+}
+
+.section6 img {
+    height: 60vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.section6 .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: #fff;
+    text-align: center;
+}
+
+.section6 .content h5 {
+    font-size: 3.5vw;
+}
+
+.section6 .content div {
+    font-size: 5vw;
+}
+
+.section7 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    padding: 0 20vw;
+    gap: 10px;
+}
+
+.section7 .image{
+    width: 50%;
+    margin: 15px;
+    overflow: hidden;
+}
+
+.section7 .image img{
+    width: 100%;
+    height: 65vh;
+    object-fit: cover;
+}
+
+.section7 .image img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.section7 .content {
+    width: 50%;
+}
+
+.section7 .content h2{
+    font-size: 1.2vw;
+    color: red;
+    font-weight: 400;
+}
+
+.section7 .content h4{
+    font-size: 3vw;
+    color: black;
+}
+
+
+.section7 .content h1{
+    font-size: 4vw;
+    color: red;
+}
+
+.section7 .content p{
+    font-size: 1vw;
+    color: black;
+    font-weight: 400;
+}
+
+
+.section7 .content button{
+    margin: 20px 0;
+    font-size: .8vw;
+    background-color: red;
+    width: 70%;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 15px;
+}
+
+.section8 {
+    width: 100%;
+    padding: 5vw 10vw;
+}
+
+.section8 h3 {
+    font-weight: 300;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.section8 h4 {
+    font-weight: 300;
+    font-size: 3vw;
+    color: red;
+    text-align: center;
+}
+
+.section8 .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    cursor: pointer;
+    gap: 20px;
+}
+
+.section8 .container .image {
+    width: 100%;
+    overflow: hidden;
+    height: 60vh;
+    position: relative;
+}
+
+.section8 .container .image img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.section8 .container .image:hover img {
+    transform: scale(1.1);
+}
+
+.section8 .container .image .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #00000000;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.section8 .container .image .boxContent {
+    display: none;
+}
+
+.section8 .container .image:hover .boxContent {
+    display: block;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.section8 .container .image:hover .boxContent h5 {
+    font-size: 1.2vw;
+}
+
+
+.section8 .container .image:hover .boxContent h6 {
+    font-size: 3.2vw;
+}
+
+.section9 {
+    width: 100%;
+    padding: 5vw 10vw;
+}
+
+.section9 h3 {
+    font-weight: 300;
+    font-size: 1.5vw;
+    color: red;
+    text-align: center;
+}
+
+.section9 h4 {
+    font-weight: 300;
+    font-size: 3vw;
+    text-align: center;
+}
+
+
+.section9 .container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    cursor: pointer;
+    gap: 20px;
+    padding-top: 3vw;
+}
+
+.section9 .container .image {
+    width: 100%;
+    overflow: hidden;
+    height: 60vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px -10px rgba(0, 0, 0, 0.4), inset 10px 10px 10px -10px rgba(0, 0, 0, 0.9);
+}
+
+.section9 .container .image:nth-last-child(2) {
+    margin-top: 50px;
+}
+
+.section9 .container .image img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.section9 .container .image .content {
+    padding: 20px;
+}
+
+.section9 .container .image .content h5 {
+    font-size: 2vw;
+    padding-bottom: 5px;
+}
+
+.section9 .container .image .content p {
+    font-size: 1vw;
+    padding-bottom: 5px;
+}
+
+footer {
+    height: 10vh;
+    margin-top: 10vh;
+    color: white;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+}
